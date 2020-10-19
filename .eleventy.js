@@ -3,6 +3,9 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const yaml = require("js-yaml");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = function(eleventyConfig) {
 
@@ -18,6 +21,7 @@ module.exports = function(eleventyConfig) {
   // Merge data instead of overriding
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -28,6 +32,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("machineDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
+
+  // Assorted plugins
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(svgContents);
 
   // Minify CSS
   eleventyConfig.addFilter("cssmin", function(code) {
@@ -44,7 +52,6 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
-  // Minify HTML output
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (outputPath.indexOf(".html") > -1) {
       let minified = htmlmin.minify(content, {
@@ -56,7 +63,7 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
-
+  
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/img");

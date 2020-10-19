@@ -1,45 +1,40 @@
 ---
-layout: none
-pagination:
-  data: collections.episodes
-  size: Infinity
-  alias: episodes
-permalink: /episodes.xml
+permalink: "/episodes.xml"
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xml:base="">
   <channel>
-    <language>en</language>
-    <title>{{ site.title }}</title>
-    <description>{{ site.description }}</description>
-    <lastBuildDate>{{ page.date.toUTCString() }}</lastBuildDate>
-    <author>{{ site.author }}</author>
-    <itunes:author>{{ site.author }}</itunes:author>
-    <itunes:summary><![CDATA[{{ site.description }}]]></itunes:summary>
-    <itunes:image href="{{ site.url }}{{ site.poster | url }}"/>
-    <image><url>{{ site.url }}{{ site.poster | url}}</url><link>{{ site.url }}</link><title>{{ site.title }}</title></image>
-    <copyright>© 2006 - 2020 {{ site.author }}</copyright>
-    <itunes:owner><itunes:name>{{ site.author }}</itunes:name><itunes:email>{{ site.email }}</itunes:email></itunes:owner>
-    <link>{{ site.url }}</link>
-    <itunes:new-feed-url>{{ site.url }}{{ page.url | url}}</itunes:new-feed-url>
-    {% for tag in site.tags %}<itunes:category text="{{ tag }}"/>{% endfor %}
-{% for episode in episodes %}
+    <language>{{ podcast.language }}</language>
+    <title>{{ podcast.title }}</title>
+    <description>{{ podcast.description }}</description>
+    <link>{{ "/" | absoluteUrl(metadata.url) }}</link>
+    <lastBuildDate>{{ collections.episodes | rssLastUpdatedDate }}</lastBuildDate>
+    <author>{{ podcast.author }}</author>
+    <copyright>{{ podcast.copyright }}</copyright>
+    <itunes:owner>
+      <itunes:name>{{ podcast.owner.name }}</itunes:name>
+      <itunes:email>{{ podcast.owner.email }}</itunes:email>
+    </itunes:owner>
+    <itunes:author>{{ podcast.author }}</itunes:author>
+    <itunes:summary><![CDATA[{{ podcast.description }}]]></itunes:summary>
+    <itunes:image href="{{ podcast.poster | url | absoluteUrl(metadata.url) }}"/>
+    {% for category in podcast.categories %}<itunes:category text="{{ category }}" />"{% endfor %}
+    {%- for episode in collections.episodes %}
     <item>
 	  <title>{{ episode.data.title }}</title>
-	  <pubDate>{{ episode.date.toUTCString() }}</pubDate>
-	  <dc:creator>{{ site.author }}</dc:creator>
+	  <pubDate>{{ episode.date | rssDate }}</pubDate>
+	  <dc:creator>{{ metadata.author }}</dc:creator>
 	  <guid isPermaLink="false">{{ episode.data.guid }}</guid>
-	  <itunes:image/>
-	  <enclosure url="{{ site.storage }}{{ episode.data.filename | url }}" length="{{ episode.data.filesize }}" type="audio/mpeg"/>
+	  <enclosure url="{{ episode.data.filename | url | absoluteUrl(episode.data.storage) }}" length="{{ episode.data.filesize }}" type="{{ episode.data.filemime }}"/>
+	  <link>{{ episode.url | url | absoluteUrl(metadata.url) }}</link>
+	  <description><![CDATA[{{ episode.data.description }}]]></description>
 	  <itunes:title>{{ episode.data.title }}</itunes:title>
-	  <link>{{ site.url }}{{ episode.url | url }}</link>
-	  <description>{{ episode.data.description }}</description>
-	  <itunes:author>{{ site.author }}</itunes:author>
-	  <itunes:keywords>Digital &amp; Content Strategy</itunes:keywords>
-	  <itunes:explicit>{{ site.explicit }}</itunes:explicit>
-	  <itunes:summary><![CDATA[{{ episode.data.description }}]]></itunes:summary>
+      {%- if episode.data.image %}<itunes:image href="{{ episode.data.image | url | absoluteUrl(metadata.url) }}"/>{% endif %}
+	  {%- if episode.data.episode %}<itunes:episode>{{ episode.data.episode }}</itunes:episode>{% endif -%}
+	  <itunes:author>{{ episode.data.author }}</itunes:author>
+	  <itunes:explicit>{{ episode.data.explicit }}</itunes:explicit>
     </item>
-{% endfor %}
+   {%- endfor %}
   </channel>
 </rss>
