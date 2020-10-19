@@ -194,3 +194,10 @@ button {
 		font-size: 1.1rem;
 	}
 }
+
+.player-container {
+    margin: 30px auto;
+    height: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans', sans-serif;
+}

@@ -4,7 +4,10 @@
   "url": "https://insertcontenthere.com",
   "author": "Jeff Eaton",
   "email": "jeff@eaton.fyi",
-  "itunesfeed": "https://podcasts.apple.com/us/podcast/insert-content-here/id562303243",
-  "rss": "episodes.xml",
-  "twitter": "eaton"
+  "itunes": "https://podcasts.apple.com/us/podcast/insert-content-here/id562303243",
+  "rss": "/episodes.xml",
+  "twitter": "eaton",
+  "google_analytics": "UA-168755040-3"
 }
+
+

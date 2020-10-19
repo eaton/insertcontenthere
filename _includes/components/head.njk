@@ -6,7 +6,7 @@
   <title>{{ renderData.title or title or metadata.title }}</title>
   <meta name="description" property="og:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
 
-  <!-- Social Metadata -->
+  <!-- Social metadata -->
   <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}" />
   <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
   <meta property="og:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}" />
@@ -21,15 +21,19 @@
   <meta name="twitter:player:width" content="{{ page.data.player.width }}" />
   <meta name="twitter:player:height" content="{{ page.data.player.height }}" />
   {% endif -%}
-  <!-- Social Metadata -->
+  <!-- Social metadata -->
 
+  {% if metadata.google_analytics %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ metadata.google_analytics }}"></script>{% endif %}
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+
   {% set css %}
     {% include "assets/css/inline.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   {% set js %}
-    {% include "assets/js/inline.js" %}
+    {% include "assets/js/netlify.js" %}
+    {%- if metadata.google_analytics %}{% include "assets/js/analytics.js" %}{% endif -%}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
 </head>

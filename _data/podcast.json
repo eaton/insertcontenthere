@@ -8,7 +8,5 @@
   "owner": { "name": "Jeff Eaton", "email": "jeff@eaton.fyi" },
   "copyright": "©2012-2020 Jeff Eaton",
   "cover": "/static/img/insertcontenthere.jpg",
-  "audiogram_width": 400,
-  "audiogram_height": 400,
   "complete": false
 }
