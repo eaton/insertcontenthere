@@ -1,0 +1,46 @@
+---
+layout: none
+pagination:
+  data: collections.episodes
+  size: Infinity
+  alias: episodes
+permalink: /episodes.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xml:base="">
+  <channel>
+    <language>en</language>
+    <title>{{ site.title }}</title>
+    <description>{{ site.description }}</description>
+    <lastBuildDate>Thu, 15 Oct 2020 22:53 America/New_York</lastBuildDate>
+    <author>{{ site.author }}</author>
+    <itunes:author>{{ site.author }}</itunes:author>
+    <itunes:summary><![CDATA[{{ site.description }}]]></itunes:summary>
+    <itunes:image href="{{ site.url }}{{ site.poster | url }}"/>
+    <image><url>{{ site.url }}{{ site.poster | url}}</url><link>{{ site.url }}</link><title>{{ site.title }}</title></image>
+    <copyright>© 2006 - 2020 {{ site.author }}</copyright>
+    <itunes:owner><itunes:name>{{ site.author }}</itunes:name><itunes:email>{{ site.author }}</itunes:email></itunes:owner>
+    <link>{{ site.url }}</link>
+    <itunes:new-feed-url>{{ site.url }}{{ page.url | url}}</itunes:new-feed-url>
+    {% for tag in site.tags %}<itunes:category text="{{ tag }}"/>{% endfor %}
+  </itunes:category>
+{% for episode in episodes %}
+    <item>
+	  <title>{{ episode.title }}</title>
+	  <pubDate>Mon, 08 May 2017 12:00:00 -0400</pubDate>
+	  <dc:creator>{{ site.author }}</dc:creator>
+	  <guid isPermaLink="false">{{ episode.guid }}</guid>
+	  <itunes:image/>
+	  <enclosure url="{{ site.storage }}{{ episode.filename | url }}" length="{{ episode.filesize }}" type="audio/mpeg"/>
+	  <itunes:title>{{ episode.title }}</itunes:title>
+	  <link>{{ site.url }}{{ episode.url | url }}</link>
+	  <description>{{ episode.description }}</description>
+	  <itunes:author>{{ site.author }}</itunes:author>
+	  <itunes:keywords>Digital &amp; Content Strategy</itunes:keywords>
+	  <itunes:explicit>{{ site.explicit }}</itunes:explicit>
+	  <itunes:summary><![CDATA[{{ episode.description }}]]></itunes:summary>
+    </item>
+{% endfor %}
+  </channel>
+</rss>
