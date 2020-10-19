@@ -11,15 +11,15 @@ eleventyExcludeFromCollections: true
     <link>{{ "/" | absoluteUrl(metadata.url) }}</link>
     <lastBuildDate>{{ collections.episodes | rssLastUpdatedDate }}</lastBuildDate>
     {%- if podcast.complete %}<itunes:complete>Yes</itunes:complete>{% endif -%}
-    <author>{{ podcast.author }}</author>
-    <copyright>{{ podcast.copyright }}</copyright>
-    <itunes:owner>
+    {%- if podcast.author %}<author>{{ podcast.author }}</author>{% endif -%}
+    {%- if podcast.copyright %}<copyright>{{ podcast.copyright }}</copyright>{% endif -%}
+    {%- if podcast.owner %}<itunes:owner>
       <itunes:name>{{ podcast.owner.name }}</itunes:name>
       <itunes:email>{{ podcast.owner.email }}</itunes:email>
-    </itunes:owner>
-    <itunes:author>{{ podcast.author }}</itunes:author>
+    </itunes:owner>{% endif -%}
+    {%- if podcast.author %}<itunes:author>{{ podcast.author }}</itunes:author>{% endif -%}
     <itunes:summary><![CDATA[{{ podcast.description }}]]></itunes:summary>
-    <itunes:image href="{{ podcast.poster | url | absoluteUrl(metadata.url) }}"/>
+    <itunes:image href="{{ podcast.cover | url | absoluteUrl(metadata.url) }}"/>
     {% for category in podcast.categories %}<itunes:category text="{{ category }}" />"{% endfor %}
     {%- for episode in collections.episodes %}
     <item>
