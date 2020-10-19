@@ -2,8 +2,27 @@
   <meta charset="utf-8">
   <link rel="dns-prefetch" href="https://identity.netlify.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>{{ renderData.title or title or metadata.title }}</title>
-  <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
+  <meta name="description" property="og:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
+
+  <!-- Social Metadata -->
+  <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}" />
+  <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
+  <meta property="og:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}" />
+  <meta property="og:type" content="{{ 'website' if '/' == page.url else 'article' }}" />
+  {%- if '/' != page.url %}<meta property="article:published_time" content="{{ page.date | rssDate }}">{% endif -%}
+  <meta property="og:image" content="{{ page.image if page.image else podcast.poster | url | absoluteUrl(metadata.url) }}" />
+
+  <meta name="twitter:card" content="{{ 'player' if page.data.twitter.player else 'summary' }}" />
+  {%- if metadata.twitter %}<meta name="twitter:site" content="@{{ metadata.twitter }}" />{% endif -%}
+  {%- if page.data.player %}
+  <meta name="twitter:player" content="{{ page.data.player.url | url | absoluteUrl(metadata.url) }}" />
+  <meta name="twitter:player:width" content="{{ page.data.player.width }}" />
+  <meta name="twitter:player:height" content="{{ page.data.player.height }}" />
+  {% endif -%}
+  <!-- Social Metadata -->
+
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% set css %}
     {% include "assets/css/inline.css" %}
