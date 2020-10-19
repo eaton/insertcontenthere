@@ -1,13 +1,10 @@
 {
   "title": "Insert Content Here",
   "description": "Cheeky conversations about content strategy, riveting tales of projects gone off-the-rails, and reflections on life in the trenches of digital publishing.",
+  "url": "https://insertcontenthere.com",
   "author": "Jeff Eaton",
   "email": "jeff@eaton.fyi",
-  "url": "https://insertcontenthere.com",
-  "poster": "static/img/insertcontenthere.jpg",
-  "tags": ["Technology", "Tech News", "Podcasting"],
-  "storage": "https://insertcontenthere.s3.amazonaws.com",
-  "explicit": "No",
   "itunesfeed": "https://podcasts.apple.com/us/podcast/insert-content-here/id562303243",
   "rss": "episodes.xml"
+  "twitter": "eaton"
 }

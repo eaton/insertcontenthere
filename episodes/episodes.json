@@ -1,4 +1,10 @@
 {
+  "tags": "episodes",
   "layout": "layouts/episode.njk",
-  "permalink": "/{{ fileSlug }}/"
+  "storage": "https://insertcontenthere.s3.amazonaws.com",
+  "filemime": "audio/mpeg",
+  "permalink": "episode-{{ episode }}/index.html",
+  "author": "Jeff Eaton",
+  "explicit": "No",
+  "copyright": "©2012 - 2020 Jeff Eaton"
 }

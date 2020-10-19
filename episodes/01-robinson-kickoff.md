@@ -1,18 +1,18 @@
 ---
-title: What the Heck is Content Strategy?
+title: "What the Heck is Content Strategy?"
 episode: 1
 transcript: False
 date: 2012-09-14
 guid: 283e01d7-9386-4031-86f6-4363b269f68f
 filename: insert-content-here-01.mp3
-filesize: 
-description: In the innaugural episode, Jeff Eaton and Jeff Robbins discuss the meaning of Content Strategy, reminisce about the dark days of Dreamweaver, and introduce a dazzling new jingle.
-guests:
-    - name: Jeff Robbins
-      title: CEO
-      company: Lullabot
-      home: http://jjeff.com
-      twitter: jjeff
+filesize: 22089237
+description: "In the innaugural episode, Jeff Eaton and Jeff Robbins discuss the meaning of Content Strategy, reminisce about the dark days of Dreamweaver, and introduce a dazzling new jingle."
+guests: 
+  - name: Jeff Robbins
+    title: CEO
+    company: Lullabot
+    home: http://jjeff.com
+    twitter: jjeff
 ---
 Jeff Eaton
 :  Hi, I'm Jeff Eaton, your host of Insert Content Here, a podcast about a content strategy and -- as I like to think of it -- content tactics. I'm here with Jeff Robbins, and we're both from Lullabot. If you're a longtime listener to the Lullabot podcast, this is actually a new podcast we're launching. Put simply, we keep getting involved in content strategy, over and over, in every project we work on.

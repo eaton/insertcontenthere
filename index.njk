@@ -1,18 +1,11 @@
 ---
 title: Insert Content Here
 layout: layouts/base.njk
-pagination:
-  data: collections.episodes
-  size: Infinity
-  alias: episodes
 permalink: "/"
 eleventyExcludeFromCollections: true
 ---
-
-<h1>{{ title }}</h1>
-
 <section>
-	{% for episode in episodes %}
+	{% for episode in collections.episodes | reverse %}
 		<article{% if episode.url == url %} data-current="current item"{% endif %}>
 			<h3>
 				<a href="{{ episode.url | url }}">
