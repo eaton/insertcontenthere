@@ -26,19 +26,19 @@ eleventyExcludeFromCollections: true
     {% for tag in site.tags %}<itunes:category text="{{ tag }}"/>{% endfor %}
 {% for episode in episodes %}
     <item>
-	  <title>{{ episode.title }}</title>
+	  <title>{{ episode.data.title }}</title>
 	  <pubDate>{{ episode.date.toUTCString() }}</pubDate>
 	  <dc:creator>{{ site.author }}</dc:creator>
-	  <guid isPermaLink="false">{{ episode.guid }}</guid>
+	  <guid isPermaLink="false">{{ episode.data.guid }}</guid>
 	  <itunes:image/>
-	  <enclosure url="{{ site.storage }}{{ episode.filename | url }}" length="{{ episode.filesize }}" type="audio/mpeg"/>
-	  <itunes:title>{{ episode.title }}</itunes:title>
+	  <enclosure url="{{ site.storage }}{{ episode.data.filename | url }}" length="{{ episode.data.filesize }}" type="audio/mpeg"/>
+	  <itunes:title>{{ episode.data.title }}</itunes:title>
 	  <link>{{ site.url }}{{ episode.url | url }}</link>
-	  <description>{{ episode.description }}</description>
+	  <description>{{ episode.data.description }}</description>
 	  <itunes:author>{{ site.author }}</itunes:author>
 	  <itunes:keywords>Digital &amp; Content Strategy</itunes:keywords>
 	  <itunes:explicit>{{ site.explicit }}</itunes:explicit>
-	  <itunes:summary><![CDATA[{{ episode.description }}]]></itunes:summary>
+	  <itunes:summary><![CDATA[{{ episode.data.description }}]]></itunes:summary>
     </item>
 {% endfor %}
   </channel>

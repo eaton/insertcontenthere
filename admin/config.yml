@@ -15,10 +15,19 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{episode}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     preview: false
+    sortable_fields: ['date', 'title']
+    view_filters:
+      - label: "Episodes Without Transcripts"
+        field: transcript
+        pattern: false
+      - label: Drafts
+        field: draft
+        pattern: true
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Episode", name: "episode", widget: "number", value_type: "int", min: 1, required: true }
       - { label: "Publish Date", name: "date", widget: "date", required: true" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Transcript", name: "title", widget: "boolean", default: false }
       - { label: "GUID", name: "title", widget: "string", required: true }
       - { label: "Filename", name: "filename", widget: "string", required: true }

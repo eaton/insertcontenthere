@@ -7,5 +7,7 @@
   "poster": "static/img/insertcontenthere.jpg",
   "tags": ["Technology", "Tech News", "Podcasting"],
   "storage": "https://insertcontenthere.s3.amazonaws.com",
-  "explicit": "No"
+  "explicit": "No",
+  "itunesfeed": "https://podcasts.apple.com/us/podcast/insert-content-here/id562303243",
+  "rss": "episodes.xml"
 }
