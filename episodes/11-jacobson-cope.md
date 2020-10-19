@@ -4,9 +4,8 @@ episode: 11
 transcript: False
 date: 2013-03-15
 guid: 3dd7033b-22d2-49bd-b178-4059cbf4cff3
-audio: 
-  filename: insert-content-here-11.mp3
-  length: 
+filename: insert-content-here-11.mp3
+length: 
 description: Jeff Eaton and Daniel Jacobson discuss the history of NPR&#039;s COPE approach to content management, his work at Netflix, and the future of APIs for content-focused businesses.
 guests:
     - name: Daniel Jacobson

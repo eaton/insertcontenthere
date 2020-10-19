@@ -4,9 +4,8 @@ episode: 5
 transcript: False
 date: 2012-11-23
 guid: 037369fa-1a64-4276-b7e1-4524686a9d62
-audio: 
-  filename: insert-content-here-05.mp3
-  length: 
+filename: insert-content-here-05.mp3
+length: 
 description: Jeff Eaton, Marc Danziger, and Andrew Berry discuss NBC's Juno Project, a new take on the corporate knowledge base that combines sales and project management tools with long-term organizational history.
 guests:
     - name: Andrew Berry

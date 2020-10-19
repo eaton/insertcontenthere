@@ -4,9 +4,8 @@ episode: 10
 transcript: False
 date: 2013-02-17
 guid: d57854cc-f7f1-4999-b1d4-b06722fdd4e2
-audio: 
-  filename: insert-content-here-10.mp3
-  length: 
+filename: insert-content-here-10.mp3
+length: 
 description: Jeff Eaton and Relly Annett-Baker discuss the difference that carefully crafted microcopy can make to users; explore the challenge of bringing writers, designers, and developers together; and plan for future hijinks.
 guests:
     - name: Relly Annett-Baker

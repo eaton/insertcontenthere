@@ -4,9 +4,8 @@ episode: 4
 transcript: False
 date: 2012-11-09
 guid: 9ce3b860-cf92-4e5f-b0e8-837cf2f15f38
-audio: 
-  filename: insert-content-here-04.mp3
-  length: 
+filename: insert-content-here-04.mp3
+length: 
 description: Jeff Eaton and Karen McGrane discuss the rise of mobile; the challenges of transitioning to reusable content; and Karen's new book, Content Strategy for Mobile.
 guests:
     - name: Karen McGrane

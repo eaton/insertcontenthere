@@ -4,9 +4,8 @@ episode: 24
 transcript: False
 date: 2015-04-17
 guid: ba50baff-69a6-4f98-99af-09640905189d
-audio: 
-  filename: insert-content-here-24.mp3
-  length: 
+filename: insert-content-here-24.mp3
+length: 
 description: Jeff talks to Steve Fisher, founder of The Republic of Quality and co-organizer of the Design/Content Conference. They cover the growing movement towards cross-functional design/content/development teams, and the joys of organizing and promoting the new conference.
 guests:
     - name: Steve Fisher

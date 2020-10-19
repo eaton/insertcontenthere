@@ -4,9 +4,8 @@ episode: 27
 transcript: False
 date: 2015-05-29
 guid: 4f9d2b91-be4e-4c03-b252-4c210bc2d0e6
-audio: 
-  filename: insert-content-here-27.mp3
-  length: 
+filename: insert-content-here-27.mp3
+length: 
 description: Jeff talks to Deane Barker of Blend Interactive about the art and practice of content management, the joy of solving complicated problems, and his upcoming book, Web Content Management.
 guests:
     - name: Deane Barker

@@ -4,9 +4,8 @@ episode: 6
 transcript: False
 date: 2012-12-07
 guid: 0f699fcf-b9b7-4dd4-ba9e-ee58fe093378
-audio: 
-  filename: insert-content-here-06.mp3
-  length: 
+filename: insert-content-here-06.mp3
+length: 
 description: Jeff Eaton and Deane Barker discuss the evolution of the CMS, its impact on content strategy, and the ins and outs of content modeling.
 guests:
     - name: Deane Barker

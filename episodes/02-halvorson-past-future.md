@@ -4,9 +4,8 @@ episode: 2
 transcript: False
 date: 2012-10-12
 guid: 9b9431f2-722e-4a78-8da6-9e663e01cebe
-audio: 
-  filename: insert-content-here-02.mp3
-  length: 
+filename: insert-content-here-02.mp3
+length: 
 description: Jeff Eaton and Kristina Halvorson of Brain Traffic discuss content strategy trends, the art of stakeholder wrangling, and proper bourbon pairings for your content audit.
 guests:
     - name: Kristina Halvorson

@@ -4,9 +4,8 @@ episode: 08
 transcript: False
 date: 2013-01-04
 guid: e297c70d-f5f3-44e3-915d-959feccdfdad
-audio: 
-  filename: insert-content-here-00.mp3
-  length: 
+filename: insert-content-here-00.mp3
+length: 
 description: Jeff Eaton and Karen McGrane review 2012's best articles, presentations, and conversations about structured content, responsive design, and more.
 guests:
     - name: Karen McGrane

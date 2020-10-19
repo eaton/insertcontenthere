@@ -4,9 +4,8 @@ episode: 1
 transcript: False
 date: 2012-09-14
 guid: 283e01d7-9386-4031-86f6-4363b269f68f
-audio: 
-  filename: insert-content-here-01.mp3
-  length: 
+filename: insert-content-here-01.mp3
+filesize: 
 description: In the innaugural episode, Jeff Eaton and Jeff Robbins discuss the meaning of Content Strategy, reminisce about the dark days of Dreamweaver, and introduce a dazzling new jingle.
 guests:
     - name: Jeff Robbins
