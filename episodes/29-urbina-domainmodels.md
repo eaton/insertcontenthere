@@ -1,0 +1,15 @@
+---
+title: Noz Urbina on Domain Models and Journey Maps
+episode: 29
+transcript: False
+date: 2017-04-19
+guid: dbc78d48-d0e7-4f68-9d2d-192d9c6ba8e8
+audio: 
+  filename: insert-content-here-29.mp3
+  length: 
+description: Jeff Eaton and Noz Urbina discuss the power of combining domain modeling and customer journey maps when modeling structured content.
+guests:
+    - name: Noz Urbina
+      home: https://urbinaconsulting.com
+      twitter: nozurbina
+---

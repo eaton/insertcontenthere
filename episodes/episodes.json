@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/episode.njk",
+  "storage": "https://insertcontenthere.s3.amazonaws.com/",
+  "permalink": "/episodes/{{ fileSlug }}/index.html"
+}
