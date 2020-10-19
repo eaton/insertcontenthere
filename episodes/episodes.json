@@ -1,4 +1,4 @@
 {
   "layout": "layouts/episode.njk",
-  "permalink": "/{{ fileSlug }}/index.html"
+  "permalink": "/{{ fileSlug }}/"
 }

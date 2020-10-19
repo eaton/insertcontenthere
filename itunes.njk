@@ -13,22 +13,21 @@ eleventyExcludeFromCollections: true
     <language>en</language>
     <title>{{ site.title }}</title>
     <description>{{ site.description }}</description>
-    <lastBuildDate>Thu, 15 Oct 2020 22:53 America/New_York</lastBuildDate>
+    <lastBuildDate>{{ page.date.toUTCString() }}</lastBuildDate>
     <author>{{ site.author }}</author>
     <itunes:author>{{ site.author }}</itunes:author>
     <itunes:summary><![CDATA[{{ site.description }}]]></itunes:summary>
     <itunes:image href="{{ site.url }}{{ site.poster | url }}"/>
     <image><url>{{ site.url }}{{ site.poster | url}}</url><link>{{ site.url }}</link><title>{{ site.title }}</title></image>
     <copyright>© 2006 - 2020 {{ site.author }}</copyright>
-    <itunes:owner><itunes:name>{{ site.author }}</itunes:name><itunes:email>{{ site.author }}</itunes:email></itunes:owner>
+    <itunes:owner><itunes:name>{{ site.author }}</itunes:name><itunes:email>{{ site.email }}</itunes:email></itunes:owner>
     <link>{{ site.url }}</link>
     <itunes:new-feed-url>{{ site.url }}{{ page.url | url}}</itunes:new-feed-url>
     {% for tag in site.tags %}<itunes:category text="{{ tag }}"/>{% endfor %}
-  </itunes:category>
 {% for episode in episodes %}
     <item>
 	  <title>{{ episode.title }}</title>
-	  <pubDate>Mon, 08 May 2017 12:00:00 -0400</pubDate>
+	  <pubDate>{{ episode.date.toUTCString() }}</pubDate>
 	  <dc:creator>{{ site.author }}</dc:creator>
 	  <guid isPermaLink="false">{{ episode.guid }}</guid>
 	  <itunes:image/>
