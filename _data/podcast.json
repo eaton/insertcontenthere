@@ -1,11 +1,14 @@
 {
+  "language": "en-us",
   "title": "Insert Content Here",
   "description": "Cheeky conversations about content strategy, riveting tales of projects gone off-the-rails, and reflections on life in the trenches of digital publishing.",
-  "language": "en-us",
+  "categories": ["Technology", "News", "Business"],
+  "explicit": "No",
   "author": "Jeff Eaton",
   "owner": { "name": "Jeff Eaton", "email": "jeff@eaton.fyi" },
-  "categories": ["Technology", "News", "Business"],
-  "poster": "/static/img/insertcontenthere.jpg",
   "copyright": "©2012-2020 Jeff Eaton",
-  "explicit": "No"
+  "poster": "/static/img/insertcontenthere.jpg",
+  "audiogram_width": 400,
+  "audiogram_height": 400,
+  "complete": false
 }

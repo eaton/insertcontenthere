@@ -10,6 +10,7 @@ eleventyExcludeFromCollections: true
     <description>{{ podcast.description }}</description>
     <link>{{ "/" | absoluteUrl(metadata.url) }}</link>
     <lastBuildDate>{{ collections.episodes | rssLastUpdatedDate }}</lastBuildDate>
+    {%- if podcast.complete %}<itunes:complete>Yes</itunes:complete>{% endif -%}
     <author>{{ podcast.author }}</author>
     <copyright>{{ podcast.copyright }}</copyright>
     <itunes:owner>
