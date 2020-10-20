@@ -31,8 +31,8 @@ eleventyExcludeFromCollections: true
 	  <enclosure url="{{ episode.data.filename | url | absoluteUrl(episode.data.storage) }}" length="{{ episode.data.filesize }}" type="{{ episode.data.filemime }}"/>
 	  <link>{{ episode.url | url | absoluteUrl(metadata.url) }}</link>
 	  <description><![CDATA[{{ episode.data.description }}]]></description>
-	  <itunes:title>{{ episode.data.title }}</itunes:title>
-      {%- if episode.data.image %}<itunes:image href="{{ episode.data.image | url | absoluteUrl(metadata.url) }}"/>{% endif %}
+	  <itunes:title>{{ episode.data.title }}</itunes:title>'
+    {%- if episode.data.image %}<itunes:image href="{{ episode.data.image | url | absoluteUrl(metadata.url) }}"/>{% endif %}
 	  {%- if episode.data.episode %}<itunes:episode>{{ episode.data.episode }}</itunes:episode>{% endif -%}
 	  <itunes:author>{{ episode.data.author }}</itunes:author>
 	  <itunes:explicit>{{ episode.data.explicit }}</itunes:explicit>
