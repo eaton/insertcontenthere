@@ -1,7 +1,7 @@
 ---
 title: "Daniel Jacobson on NPR's COPE and Content APIs"
 episode: 11
-transcript: False
+transcript: partial
 date: 2013-03-15
 guid: 3dd7033b-22d2-49bd-b178-4059cbf4cff3
 filename: insert-content-here-11.mp3
@@ -26,7 +26,7 @@ links:
 ---
 Jeff Eaton
 :  Hi, I'm Jeff Eaton, senior architect at Lullabot. And your host for insert content here. today I'm here with Daniel Jacobson, the, the illustrious Daniel Jacobson. he, he's not necessarily someone that you, that you may have seen him in. Content circles or nerding out in the CMS world that much, but he's actually one of the, one of the movers and shakers.
-:  His role for quite a few years was Director of Application Development at NPR, where he oversaw the development of COPE -- the Create Once Publish Everywhere infrastructure that made all kinds of waves in the content strategy and CMS world. He's the author of O'Reilly and Associates' *APIs: A Strategy Guide**. And now, he's the director of engineering for the Netflix API. So, he is just all over the place when it comes to content, APIs, and reusable structured content. It's a pleasure to have you here, Daniel, thank you for joining us.
+:  His role for quite a few years was Director of Application Development at NPR, where he oversaw the development of COPE -- the Create Once Publish Everywhere infrastructure that made all kinds of waves in the content strategy and CMS world. He's the author of O'Reilly and Associates' *APIs: A Strategy Guide*. And now, he's the director of engineering for the Netflix API. So, he is just all over the place when it comes to content, APIs, and reusable structured content. It's a pleasure to have you here, Daniel, thank you for joining us.
 
 Daniel Jacobson
 :  Thanks for having me, Jeff. Thanks for that very nice intro. 

@@ -1,7 +1,7 @@
 ---
 title: "Margot Bloomstein on Design Thinking for Content"
 episode: 15
-transcript: False
+transcript: false
 date: 2013-06-21
 guid: 40ad5e88-08c2-40a9-b6fc-e9f509c08a21
 filename: insert-content-here-15.mp3

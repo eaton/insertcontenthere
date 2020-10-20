@@ -1,7 +1,7 @@
 ---
 title: "Steve Fisher and the Design/Content conference"
 episode: 24
-transcript: False
+transcript: false
 date: 2015-04-17
 guid: ba50baff-69a6-4f98-99af-09640905189d
 filename: insert-content-here-24.mp3

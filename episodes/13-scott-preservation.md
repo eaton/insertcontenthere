@@ -1,7 +1,7 @@
 ---
 title: "Jason Scott talks Digital History and Content Preservation"
 episode: 13
-transcript: False
+transcript: false
 date: 2013-05-10
 guid: c99665f6-678e-4bc7-b440-43ba7af9adb7
 filename: insert-content-here-13.mp3

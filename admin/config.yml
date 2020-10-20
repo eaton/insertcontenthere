@@ -28,11 +28,11 @@ collections:
       - { label: "Episode", name: "episode", widget: "number", value_type: "int", min: 1, required: true }
       - { label: "Publish Date", name: "date", widget: "date", required: true" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Transcript", name: "transcript", widget: "boolean", default: false }
+      - { label: "Transcript", name: "transcript", widget: "select", options: ["false", "partial", "true"], default: false }
       - { label: "GUID", name: "title", widget: "string", required: true }
       - { label: "Filename", name: "filename", widget: "string", required: true }
       - { label: "Filesize", name: "filesize", widget: "number", value_type: "int", min: 1, required: true }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
       - label: "Guests"
         name: "guests"
         widget: "object"

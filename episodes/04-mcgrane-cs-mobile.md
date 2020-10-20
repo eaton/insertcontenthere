@@ -1,7 +1,7 @@
 ---
 title: "Karen McGrane on Content Strategy for Mobile"
 episode: 4
-transcript: False
+transcript: false
 date: 2012-11-09
 guid: 9ce3b860-cf92-4e5f-b0e8-837cf2f15f38
 filename: insert-content-here-04.mp3

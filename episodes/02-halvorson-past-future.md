@@ -1,7 +1,7 @@
 ---
 title: "Kristina Halvorson on the Past, Present, and Future of Content Strategy"
 episode: 2
-transcript: False
+transcript: false
 date: 2012-10-12
 guid: 9b9431f2-722e-4a78-8da6-9e663e01cebe
 filename: insert-content-here-02.mp3

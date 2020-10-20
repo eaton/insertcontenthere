@@ -1,7 +1,7 @@
 ---
 title: "Andrea Phillips on Transmedia Storytelling"
 episode: 18
-transcript: False
+transcript: false
 date: 2013-08-30
 guid: fd711320-81fc-4a50-9366-d367e6bfb021
 filename: insert-content-here-18.mp3

@@ -4,7 +4,11 @@ layout: layouts/base.njk
 permalink: "/"
 eleventyExcludeFromCollections: true
 ---
-<section>
+<p>Starting in 2012, <a href="https://eaton.fyi">Jeff Eaton</a> produced and hosted a semi-regular podcast about content strategy, interviewing dozens of experts and practitioners about the world of digital content. <i>Insert Content Here</i> ran for almost five years (with some hiccups) as he transitioned from web development work at <a href="http://lullabot.com">Lullabot</a> to full-time focus on strategy consulting. This site preserves those episodes, and adds new metadata including searchable transcripts.</p>
+
+<p>In 2020 Jeff partnered with long-time friends (and <i>Insert Content Here</i> guests) <a href="https://karenmcgrane.com">Karen McGrane</a> and <a href="http://ethanmarcotte.com">Ethan Marcotte</a> to found <a href="https://twitter.com/autogram_is">Autogram</a>, a strategic consultancy for organizations with complex communication needs. Looking for the latest in design systems, decoupled content APIs, and bespoke memes? <a href="https://autogram.is">Check Autogram out</a>. Who knows? They might get the old podcast <a href="{{ metadata.itunes }}">rolling again</a>…</p>
+
+<section id="episodes">
 	{% for episode in collections.episodes | reverse %}
 		<article{% if episode.url == url %} data-current="current item"{% endif %}>
 			<h3>
@@ -23,7 +27,7 @@ eleventyExcludeFromCollections: true
 			{% endif %}
 			<p>
 				<time datetime="{{ episode.date | machineDate }}">
-					<small>{{ episode.date | readableDate }} by</small>
+					<small>Episode {{ episode.data.episode }}, published {{ episode.date | readableDate }}</small>
 				</time>
 			</p>
 		</article>

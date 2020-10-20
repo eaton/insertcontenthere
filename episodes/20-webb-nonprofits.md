@@ -1,7 +1,7 @@
 ---
 title: "Eileen Webb on Strategy for Values-Based Nonprofits"
 episode: 20
-transcript: False
+transcript: false
 date: 2013-12-13
 guid: 0880ffff-8fa6-42b7-ac12-401594d4be73
 filename: insert-content-here-20.mp3

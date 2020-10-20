@@ -1,7 +1,7 @@
 ---
 title: "Sara Wachter-Boettcher and Content Everywhere"
 episode: 7
-transcript: False
+transcript: false
 date: 2012-12-21
 guid: ecd65286-db52-429a-80cb-f7ad074200a3
 filename: insert-content-here-07.mp3

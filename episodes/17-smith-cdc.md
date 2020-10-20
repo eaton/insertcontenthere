@@ -1,7 +1,7 @@
 ---
 title: "Fred Smith on the CDC's Content API"
 episode: 17
-transcript: False
+transcript: false
 date: 2013-08-16
 guid: e7482bbd-f0f4-4599-a234-e67f2d5f6a50
 filename: insert-content-here-17.mp3

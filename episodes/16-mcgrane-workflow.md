@@ -1,7 +1,7 @@
 ---
 title: "Karen McGrane on Editorial Workflow"
 episode: 16
-transcript: False
+transcript: false
 date: 2013-08-02
 guid: 53a465d7-03ac-46b5-8252-10b3ef6701e2
 filename: insert-content-here-16.mp3

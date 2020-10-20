@@ -1,7 +1,7 @@
 ---
 title: "Mike Petroff talks Digital Strategy at Harvard"
 episode: 19
-transcript: False
+transcript: false
 date: 2013-10-21
 guid: 425ea71c-b4f9-4322-96d2-b48536baff59
 filename: insert-content-here-19.mp3

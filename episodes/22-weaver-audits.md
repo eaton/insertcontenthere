@@ -1,7 +1,7 @@
 ---
 title: "Misty Weaver and The Art of Content Audits"
 episode: 22
-transcript: False
+transcript: false
 date: 2014-03-03
 guid: 55804a91-c894-4ee1-bdc4-2f1afd80ca24
 filename: insert-content-here-22.mp3

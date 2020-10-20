@@ -195,9 +195,23 @@ button {
 	}
 }
 
-.player-container {
-    margin: 30px auto;
-    height: fit-content;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    font-family: 'Open Sans', sans-serif;
+audio {
+	width: 100%;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dt, dd {
+    padding-top: .5rem;
+}
+
+section  {
+  margin: 1rem;
+}
+
+p.disclaimer {
+	color: darkgrey;
+	font-style: italic;
 }

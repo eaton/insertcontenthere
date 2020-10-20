@@ -1,7 +1,7 @@
 ---
 title: "What the Heck is Content Strategy?"
 episode: 1
-transcript: False
+transcript: partial
 date: 2012-09-14
 guid: 283e01d7-9386-4031-86f6-4363b269f68f
 filename: insert-content-here-01.mp3

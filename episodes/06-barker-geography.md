@@ -1,7 +1,7 @@
 ---
 title: "Deane Barker on CMS Trends and Content Geography"
 episode: 6
-transcript: False
+transcript: false
 date: 2012-12-07
 guid: 0f699fcf-b9b7-4dd4-ba9e-ee58fe093378
 filename: insert-content-here-06.mp3

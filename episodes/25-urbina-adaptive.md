@@ -1,7 +1,7 @@
 ---
 title: "Noz Urbina Explains Adaptive Content"
 episode: 25
-transcript: False
+transcript: false
 date: 2015-05-01
 guid: f929fb44-0594-4972-8a84-34a187421a8f
 filename: insert-content-here-25.mp3

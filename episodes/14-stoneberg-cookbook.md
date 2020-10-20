@@ -1,7 +1,7 @@
 ---
 title: "Jared Stoneberg and The Lark Cookbook"
 episode: 14
-transcript: False
+transcript: false
 date: 2013-06-07
 guid: 96de6609-21c4-4229-b1be-8e66514b6cb7
 filename: insert-content-here-14.mp3

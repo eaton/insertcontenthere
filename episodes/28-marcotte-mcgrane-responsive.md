@@ -1,7 +1,7 @@
 ---
 title: "Building a Responsive Content Campaign"
 episode: 28
-transcript: False
+transcript: false
 date: 2015-06-12
 guid: c5ca03f0-4c03-4dde-a33f-0f2801f95a05
 filename: insert-content-here-28.mp3

@@ -1,7 +1,7 @@
 ---
 title: "Relly Annett-Baker talks Microcopy, User Experience, and Zelda"
 episode: 10
-transcript: False
+transcript: false
 date: 2013-02-17
 guid: d57854cc-f7f1-4999-b1d4-b06722fdd4e2
 filename: insert-content-here-10.mp3

@@ -1,7 +1,7 @@
 ---
 title: "Erin Kissane on Web Standards, Content Strategy, and the Future of Publishing"
 episode: 3
-transcript: False
+transcript: false
 date: 2013-10-26
 guid: e2b1823b-83e0-45c3-acd9-ec8a5a2d686c
 filename: insert-content-here-03.mp3

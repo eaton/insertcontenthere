@@ -1,7 +1,7 @@
 ---
 title: "Noz Urbina on AI for Structured Content"
 episode: 30
-transcript: False
+transcript: false
 date: 2017-05-08
 guid: a6352940-d4be-4ea4-aece-de35887727ef
 filename: insert-content-here-30.mp3

@@ -1,7 +1,7 @@
 ---
 title: "Newspapers in Transition with Greg Dunlap"
 episode: 09
-transcript: False
+transcript: false
 date: 2013-02-01
 guid: 2b26639d-7336-4c54-a82b-57e6cdaa4705
 filename: insert-content-here-09.mp3

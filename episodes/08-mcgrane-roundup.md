@@ -1,7 +1,7 @@
 ---
 title: "Year in Review with Karen McGrane"
 episode: 08
-transcript: False
+transcript: false
 date: 2013-01-04
 guid: e297c70d-f5f3-44e3-915d-959feccdfdad
 filename: insert-content-here-00.mp3

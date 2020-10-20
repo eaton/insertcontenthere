@@ -1,7 +1,7 @@
 ---
 title: "Design and Structure with Jared Ponchot"
 episode: 12
-transcript: False
+transcript: false
 date: 2013-04-02
 guid: f05d3b94-628c-4b3e-87f1-d06a119a2149
 filename: insert-content-here-12.mp3
