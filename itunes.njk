@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
     <title>{{ podcast.title }}</title>
     <description>{{ podcast.description }}</description>
     <link>{{ "/" | absoluteUrl(metadata.url) }}</link>
-    <lastBuildDate>{{ collections.episodes | rssLastUpdatedDate }}</lastBuildDate>
+    <lastBuildDate>{{ collections.episodes | rssLastUpdatedDate | rfc2822 }}</lastBuildDate>
     {%- if podcast.complete %}<itunes:complete>Yes</itunes:complete>{% endif -%}
     {%- if podcast.author %}<author>{{ podcast.author }}</author>{% endif -%}
     {%- if podcast.copyright %}<copyright>{{ podcast.copyright }}</copyright>{% endif -%}
@@ -25,7 +25,7 @@ eleventyExcludeFromCollections: true
     {%- for episode in collections.episodes %}
     <item>
 	  <title>{{ episode.data.title }}</title>
-	  <pubDate>{{ episode.date | rssDate }}</pubDate>
+	  <pubDate>{{ episode.date | rfc2822 }}</pubDate>
 	  <dc:creator>{{ metadata.author }}</dc:creator>
 	  <guid isPermaLink="false">{{ episode.data.guid }}</guid>
 	  <enclosure url="{{ episode.data.filename | url | absoluteUrl(episode.data.storage) }}" length="{{ episode.data.filesize }}" type="{{ episode.data.filemime }}"/>

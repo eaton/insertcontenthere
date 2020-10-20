@@ -33,6 +33,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
+  eleventyConfig.addFilter("rfc2822", dateObj => {
+    return DateTime.fromJSDate(dateObj).toRFC2822();
+  });
+
   // Assorted plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(svgContents);
