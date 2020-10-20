@@ -5,6 +5,7 @@
 
   <title>{% if episode %}Episode {{ episode }}: {% endif %}{{ title }}</title>
   <meta name="description" content="{{ description or renderData.description or metadata.description }}">
+  <link rel="alternate" type="application/rss+xml" title="Podcast Episodes" href="{{ metadata.rss }}"/>
 
   <!-- Social metadata -->
   <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}" />
