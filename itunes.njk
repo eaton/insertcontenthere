@@ -19,6 +19,7 @@ eleventyExcludeFromCollections: true
     </itunes:owner>{% endif -%}
     {%- if podcast.author %}<itunes:author>{{ podcast.author }}</itunes:author>{% endif -%}
     <itunes:summary><![CDATA[{{ podcast.description }}]]></itunes:summary>
+	  <itunes:explicit>{{ podcast.explicit }}</itunes:explicit>
     <itunes:image href="{{ podcast.cover | url | absoluteUrl(metadata.url) }}"/>
     {% for category in podcast.categories %}<itunes:category text="{{ category }}" />"{% endfor %}
     {%- for episode in collections.episodes %}
