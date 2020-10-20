@@ -7,6 +7,7 @@ guid: 9ce3b860-cf92-4e5f-b0e8-837cf2f15f38
 filename: insert-content-here-04.mp3
 filesize: 17422420
 description: "Karen McGrane on the rise of the mobile web, reusable content, and her new book: Content Strategy for Mobile."
+duration: 1857
 guests: 
   - name: Karen McGrane
     company: Bond Art + Science

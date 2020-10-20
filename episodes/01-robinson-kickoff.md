@@ -7,6 +7,7 @@ guid: 283e01d7-9386-4031-86f6-4363b269f68f
 filename: insert-content-here-01.mp3
 filesize: 22089237
 description: "Jeff Robbins discusses the meaning of Content Strategy, reminisces about Dreamweaver, and introduces a dazzling new jingle."
+duration: 2331
 guests: 
   - name: Jeff Robbins
     title: CEO

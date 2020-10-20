@@ -7,6 +7,7 @@ guid: c5ca03f0-4c03-4dde-a33f-0f2801f95a05
 filename: insert-content-here-28.mp3
 filesize: 17516352
 description: "Ethan Marcotte and Karen McGrane on the highs and lows of large-scale responsive design projects."
+duration: 
 guests: 
   - name: Karen McGrane
     company: Bond Art + Science

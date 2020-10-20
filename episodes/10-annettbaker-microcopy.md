@@ -7,6 +7,7 @@ guid: d57854cc-f7f1-4999-b1d4-b06722fdd4e2
 filename: insert-content-here-10.mp3
 filesize: 17260657
 description: "Relly Annett-Baker on the importance of microcopy and the challenge of uniting writers, designers, and developers."
+duration: 2487
 guests: 
   - name: Relly Annett-Baker
     twitter: RellyAB

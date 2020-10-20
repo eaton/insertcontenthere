@@ -7,6 +7,7 @@ guid: e297c70d-f5f3-44e3-915d-959feccdfdad
 filename: insert-content-here-00.mp3
 filesize: 17236155
 description: "Karen McGrane reviews 2012's best articles and presentatinos about structured content and responsive design."
+duration: 2909
 guests: 
   - name: Karen McGrane
     company: Bond Art + Science
