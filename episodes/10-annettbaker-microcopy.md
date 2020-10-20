@@ -1,12 +1,12 @@
 ---
-title: "Relly Annett-Baker talks Microcopy, User Experience, and Zelda"
+title: "Microcopy, User Experience, and Zelda"
 episode: 10
 transcript: false
 date: 2013-02-17
 guid: d57854cc-f7f1-4999-b1d4-b06722fdd4e2
 filename: insert-content-here-10.mp3
 filesize: 17260657
-description: "Jeff Eaton and Relly Annett-Baker discuss the difference that carefully crafted microcopy can make to users; explore the challenge of bringing writers, designers, and developers together; and plan for future hijinks."
+description: "Relly Annett-Baker on the importance of microcopy and the challenge of uniting writers, designers, and developers."
 guests: 
   - name: Relly Annett-Baker
     twitter: RellyAB

@@ -3,13 +3,13 @@
   <link rel="dns-prefetch" href="https://identity.netlify.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{{ renderData.title or title or metadata.title }}</title>
-  <meta name="description" property="og:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
+  <title>{% if episode %}Episode {{ episode }}: {% endif %}{{ title }}</title>
+  <meta name="description" content="{{ description or renderData.description or metadata.description }}">
 
   <!-- Social metadata -->
   <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}" />
-  <meta property="og:title" content="{{ renderData.title or title or metadata.title }}" />
-  <meta property="og:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description or renderData.description or metadata.description }}" />
   <meta property="og:type" content="{{ 'website' if '/' == page.url else 'article' }}" />
   {%- if '/' != page.url %}<meta property="article:published_time" content="{{ page.date | rssDate }}">{% endif -%}
   <meta property="og:image" content="{{ page.image if page.image else podcast.cover | url | absoluteUrl(metadata.url) }}" />

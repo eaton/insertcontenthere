@@ -1,12 +1,12 @@
 ---
-title: "Deane Barker on CMS Trends and Content Geography"
+title: "CMS Trends and Content Geography"
 episode: 6
 transcript: false
 date: 2012-12-07
 guid: 0f699fcf-b9b7-4dd4-ba9e-ee58fe093378
 filename: insert-content-here-06.mp3
 filesize: 26579524
-description: "Jeff Eaton and Deane Barker discuss the evolution of the CMS, its impact on content strategy, and the ins and outs of content modeling."
+description: "Deane Barker on the evolution CMSs, their impact on content strategy, and the joys of content modeling."
 guests: 
   - name: Deane Barker
     title: Co-Founder

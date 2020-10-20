@@ -1,12 +1,12 @@
 ---
-title: "Newspapers in Transition with Greg Dunlap"
+title: "Newspapers in Transition"
 episode: 09
 transcript: false
 date: 2013-02-01
 guid: 2b26639d-7336-4c54-a82b-57e6cdaa4705
 filename: insert-content-here-09.mp3
 filesize: 17309788
-description: "Jeff Eaton and Drupal initiative lead Greg Dunlap discuss the history of digital transformation at the Seattle Times, the difficulties of cross-site content sharing, and the importance of cross-discipline communication."
+description: "Greg Dunlap on the history of digital transformation at the Seattle Times, and the importance of cross-functional teams."
 guests: 
   - name: Greg Dunlap
     title: Senior Digital Strategist

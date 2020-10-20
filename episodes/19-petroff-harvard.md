@@ -1,12 +1,12 @@
 ---
-title: "Mike Petroff talks Digital Strategy at Harvard"
+title: "Digital Strategy at Harvard"
 episode: 19
 transcript: false
 date: 2013-10-21
 guid: 425ea71c-b4f9-4322-96d2-b48536baff59
 filename: insert-content-here-19.mp3
 filesize: 11543226
-description: "Jeff Eaton and Mike Petroff talk about the recent redesign of the Harvard Gazette on Wordpress, the challenges of serving a large university's communications needs, and trends in social publishing and visitor interaction."
+description: "Mike Petroff on The Harvard Gazette's Wordpress redesign, and the complexity of large university communications."
 guests: 
   - name: Mike Petroff
     company: Harvard University

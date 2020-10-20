@@ -1,12 +1,12 @@
 ---
-title: "Erin Kissane on Web Standards, Content Strategy, and the Future of Publishing"
+title: "Web Standards and Publishing's Future"
 episode: 3
 transcript: false
 date: 2012-10-26
 guid: e2b1823b-83e0-45c3-acd9-ec8a5a2d686c
 filename: insert-content-here-03.mp3
 filesize: 20886099
-description: "Jeff Eaton and Erin Kissane discuss the past and future of web standards, new experiments in web publishing, and the challenge of predicting the future."
+description: "Erin Kissane on the history of web standards, experiments in web publishing, and the challenge of predicting the future."
 guests: 
   - name: Erin Kissane
     twitter: kissane

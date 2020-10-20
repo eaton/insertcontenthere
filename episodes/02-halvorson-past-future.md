@@ -1,12 +1,12 @@
 ---
-title: "Kristina Halvorson on the Past, Present, and Future of Content Strategy"
+title: "Content Strategy's Past and Future"
 episode: 2
 transcript: false
 date: 2012-10-12
 guid: 9b9431f2-722e-4a78-8da6-9e663e01cebe
 filename: insert-content-here-02.mp3
 filesize: 20232367
-description: "Jeff Eaton and Kristina Halvorson of Brain Traffic discuss content strategy trends, the art of stakeholder wrangling, and proper bourbon pairings for your content audit."
+description: "Kristina Halvorson explains the art of stakeholder wrangling — and proper bourbon pairings for your content audits."
 guests: 
   - name: Kristina Halvorson
     title: CEO
