@@ -18,15 +18,9 @@
   <meta name="twitter:card" content="{{ 'player' if page.data.videofile else 'summary' }}" />
   {%- if metadata.twitter %}<meta name="twitter:site" content="@{{ metadata.twitter }}" />{% endif -%}
   {%- if page.data.videofile %}
-  <meta name="twitter:player" content="{{ page.url | url | absoluteUrl(metadata.url) }}player.html" />
-	<meta name="twitter:player:width" content="{{ page.data.videowidth }}" />
-	<meta name="twitter:player:height" content="{{ page.data.videowidth }}" />
-	<meta name="twitter:player:stream" content="{{ episode.data.videofile | url | absoluteUrl(episode.data.storage) }}" />
-	<meta name="twitter:player:stream:content_type" content="{{ episode.data.videomime }}" />
-
   <meta name="twitter:player" content="{{ page.data.videofile | url | absoluteUrl(metadata.url) }}" />
-  <meta name="twitter:player:width" content="{{ page.data.player.width }}" />
-  <meta name="twitter:player:height" content="{{ page.data.player.height }}" />
+  <meta name="twitter:player:height" content="{{ page.data.videoheight }}" />
+  <meta name="twitter:player:width" content="{{ page.data.videowidth }}" />
   {% endif -%}
   <!-- Social metadata -->
 
