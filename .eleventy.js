@@ -41,6 +41,18 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(svgContents);
 
+  // Generate a list of all episodes with videofiles; used to generate player
+  // cards in player.html sidecar files for Twitter.
+  // 
+  // https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/player-card
+  // https://bbcnewslabs.co.uk/projects/audiogram/
+	eleventyConfig.addCollection("players", function(collectionApi) {
+    return collectionApi.getAll().filter(function(item) {
+      // Side-step tags and do your own filtering
+      return "videofile" in item.data;
+    });
+  });
+
   // Minify CSS
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;

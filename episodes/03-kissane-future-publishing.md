@@ -4,8 +4,8 @@ episode: 3
 transcript: false
 date: 2012-10-26
 guid: e2b1823b-83e0-45c3-acd9-ec8a5a2d686c
-filename: insert-content-here-03.mp3
-filesize: 20886099
+audiofile: insert-content-here-03.mp3
+audiosize: 20886099
 description: "Erin Kissane on the history of web standards, experiments in web publishing, and the challenge of predicting the future."
 duration: 2114
 guests: 

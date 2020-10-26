@@ -4,8 +4,8 @@ episode: 08
 transcript: false
 date: 2013-01-04
 guid: e297c70d-f5f3-44e3-915d-959feccdfdad
-filename: insert-content-here-00.mp3
-filesize: 17236155
+audiofile: insert-content-here-00.mp3
+audiosize: 17236155
 description: "Karen McGrane reviews 2012's best articles and presentatinos about structured content and responsive design."
 duration: 2909
 guests: 

@@ -4,8 +4,8 @@ episode: 25
 transcript: false
 date: 2015-05-01
 guid: f929fb44-0594-4972-8a84-34a187421a8f
-filename: insert-content-here-25.mp3
-filesize: 23430824
+audiofile: insert-content-here-25.mp3
+audiosize: 23430824
 description: "Noz Urbina explains adaptive content, omni-channel marketing, and the changing face of customer engagement."
 duration: 2319
 guests: 

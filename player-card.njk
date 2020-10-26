@@ -1,0 +1,23 @@
+---
+pagination:
+    data: collections.players
+    size: 1
+    alias: episode
+permalink: "episode-{{ episode.data.episode }}//player.html"
+---
+<!DOCTYPE html>
+	<html>
+	<body>
+		<style type="text/css">
+		video {
+			 width:100%;
+			 max-width:600px;
+			 height:auto;
+		}
+		</style>
+
+		<video width="100%" controls>
+			<source src="{{ episode.data.videofile | url | absoluteUrl(episode.data.storage) }}" type="{{ episode.data.videomime }}">Your browser does not support video
+		</video>
+	</body>
+</html>

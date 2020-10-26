@@ -4,8 +4,8 @@ episode: 11
 transcript: partial
 date: 2013-03-15
 guid: 3dd7033b-22d2-49bd-b178-4059cbf4cff3
-filename: insert-content-here-11.mp3
-filesize: 14385340
+audiofile: insert-content-here-11.mp3
+audiosize: 14385340
 description: "Daniel Jacobson recaps the history of NPR's COPE, his work at Netflix, and the future of content APIs."
 duration: 2264
 guests: 
